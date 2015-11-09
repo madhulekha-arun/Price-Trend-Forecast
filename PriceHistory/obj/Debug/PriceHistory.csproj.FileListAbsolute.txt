@@ -1,0 +1,5 @@
+C:\Users\nswami1\Documents\priceHistory\PriceHistory\PriceHistory\bin\PriceHistory.dll
+C:\Users\nswami1\Documents\priceHistory\PriceHistory\PriceHistory\bin\PriceHistory.pdb
+C:\Users\nswami1\Documents\priceHistory\PriceHistory\PriceHistory\obj\Debug\PriceHistory.dll
+C:\Users\nswami1\Documents\priceHistory\PriceHistory\PriceHistory\obj\Debug\PriceHistory.pdb
+C:\Users\nswami1\Documents\priceHistory\PriceHistory\PriceHistory\obj\Debug\PriceHistory.csprojResolveAssemblyReference.cache

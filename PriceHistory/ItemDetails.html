@@ -1,0 +1,47 @@
+﻿<div class="container-fluid" ng-model="items" >
+    
+    <div class="clear-fix"></div>
+    <div style ="float: left;">
+        <img ng-src="{{items[itemNumber].item_image}}" />
+    </div>
+    
+    <div >
+        <div> 
+                <div style="margin-top:40px;"><h3>{{items[itemNumber].item_name}}</h3></div>
+            <div  style="margin-left:50px;">
+            <p class="price-font" style="text-align:left; margin-left:80px;">
+                ${{items[itemNumber].item_saleprice}}
+            </p>
+                </div>
+            <div>
+            <p class="normalText">Regular price: ${{items[itemNumber].item_regularprice}}</p>
+                </div>        </div>
+        <div class="normalText" ng-bind-html="items[itemNumber].item_detailedDescription|unsafe">
+            
+        </div>
+        <div class="clear-fix"></div>
+        <div style="margin-top: 40px;">
+            <div class="input-group">
+                <div style="float: left">  <p style="font-size:20px;">Quantity: </p></div>
+              
+           <div style="float:left;"><input type="text" ng-model="quantity" /></div> 
+                
+              
+            <input type="hidden" value="{{items[itemNumber].item_number}}" ng-model="itemNumber" />
+                  </div>
+            <div class="clear-fix"></div>
+                <div style="margin-top: 20px;">
+            <div style="float: left;">
+            <button class="btn btn-default walmartButtons" ng-click="addToShoppingCart(quantity)"  >Add to Cart</button>
+                </div>
+                
+            <div style="float:left;margin-left: 10px;">
+            <button class="btn btn-default walmartButtons" ng-click="showPriceHistory(itemNumber)"  >Show Price Trend</button>
+        </div>
+                    <div style="float:left;margin-left: 10px;">
+            <button class="btn btn-default walmartButtons" ng-click="goBack()"  >Back</button>
+        </div>
+                    </div>
+            </div>
+    </div>
+</div>

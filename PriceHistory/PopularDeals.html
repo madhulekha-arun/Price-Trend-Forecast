@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="priceHistory">
+<head>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.12.1.js"></script>
+    <script src="Scripts/jquery-1.11.2.js"></script>
+    <script src="Scripts/priceHistoryApp.js"></script>
+    <script src="Scripts/utilities.js"></script>
+ 
+     <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+    <link href="CSS/bootstrap-theme.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body ng-controller="priceController">
+    <div class="nav nav-brand walmart-header">
+         
+            <div class="col-lg-6 left-side">
+                <div class="walmart-image">
+                    <img src="images/Walmart%20logo.PNG" /></div>
+            </div>
+            <div class="col-lg-6 right-side">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search "  ng-model="queryInput"/>
+                <span class="input-group-btn" >
+                    <button class="btn btn-default searchbutton" type="button" ng-click="searchWalmart(queryInput)">Go</button>
+                </span>
+            </div>
+        </div>
+          </div>
+        <div class="clearfix"></div>
+    <div class="panel">
+        <div ng-view style="overflow-x:hidden; position: relative;">
+
+        </div>
+       </div>
+       
+        
+      
+    
+</body>
+</html>

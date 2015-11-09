@@ -1,0 +1,48 @@
+﻿<div ng-controller="chartController" ng-model="item">
+      <div style="margin-left:200px;"><h1>{{item.item_name}}</h1></div>
+    <div class="clear-fix"></div>
+    <div>
+    <div id="curve_chart" style="width: 1000px; height: 500px; margin-top: 40px; float: left;" >
+    
+    </div>
+    <div style="float: left; font-size:20px;">
+        <label>Compare with Similar Items</label>
+        <select ng-options="simItem.item_name for simItem in categoryItems" ng-model="selectedItem" ng-change="updateChart(selectedItem)"></select>
+    </div>
+  </div>
+    <div style="clear:both;"></div>
+    <div style =" margin-left: 50px;">
+    <div style="font-size:20px;" >
+        <div>
+            <label ng-show="showMessage==true">At least one option needs to be checked</label>
+        </div>
+        <div>
+            <label>Walmart</label><input type="checkbox" ng-model="showWalmart" ng-change="redraw(showWalmart,showMarket)"/>
+        </div>
+        <div>
+            <label>Rest of the Market</label><input type="checkbox" ng-model="showMarket" ng-change="redraw(showWalmart,showMarket)"/>
+        </div>
+		   <div>
+        <p> We can email you when the price of this product is lower than today's current price</p>
+    </div>
+         
+     </div>
+ 
+    <div>
+     <div style="float: left;">
+            <button class="btn btn-default walmartButtons" ng-click="addToShoppingCart(quantity)"  >Add to Cart</button>
+                </div>
+                
+            <div style="float:left;margin-left: 10px;">
+            <button class="btn btn-default walmartButtons" ng-click="showSMS('lg',item.item_name)" >SMS Me</button>
+               
+        </div>
+    <div style="float:left;margin-left: 10px;">
+            <button class="btn btn-default walmartButtons" ng-click="goBack()"  >Back</button>
+        </div>
+                    </div>
+     
+        
+</div>
+    </div>
+ <p ng-show="Message==true" style="color:red; font-weight:bold;">SMS Alert settings saved</p>

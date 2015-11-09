@@ -1,0 +1,81 @@
+﻿<div style="position: relative">
+<div class="big-walmart-panel">
+            <div class="deals-font">
+                Deals of the day
+            </div>
+            <div class =" clearfix"></div>
+            <div class="row walmart-panel img-rounded" style="width: 800px; margin: 0 auto;">
+             <carousel interval="myInterval" >
+                 <slide ng-repeat="item in deals" >
+                     
+                       <div  style="display:inline-block; margin: 0 auto; width: 900px;">
+                           <div style="float: left; display: inline-block;margin: 0 auto;">
+                               <a href="#ItemDetails/{{deals.indexOf(item)}}">
+                                <img class="big-image" ng-src="{{item.item_smallimage}}"  /></a>
+                           </div>
+						   <div style="float: left;width: 400px;">
+                           <div>
+                               <h3 style="text-align: left;">{{item.item_name}}</h3>
+                               <p style="text-align:justify;">{{item.item_description}}</p>
+                               <p class="price-font">${{item.item_saleprice}}</p>
+                                 
+                                <div style="float: left;" ng-show="item.item_lowprice=='true'" class="lowestprice-font">
+                                    <div style="height: 50px;">*Lowest price of the year!</div>
+                                  
+                                    <div> <button class="btn btn-default smallwalmartButtons"  ng-show="item.item_lowprice=='true'" ng-click="seePriceChart(deals.indexOf(item))"  >See Price history</button></div>
+                                
+                               </div>
+                           </div>
+                       </div>
+                  
+                 </slide>
+               
+                </carousel>
+                </div>
+
+            </div>
+			</div>
+        <div class="row" style="margin-top: 30px;">
+
+            <ul>
+              <li class="col-sm-2">
+                        <div style="display:inline-block"><a href="http://www.walmart.com/search/?query=barbie" target ="_blank"><img src="images/Barbie.jpg" /></a></div>
+                        <div style="clear:both"></div>
+                       <div class="otheritemscontent"> <p>Barbie</p></div><div class="otherItemsPrice"><p>$30</p></div>
+              </li>
+                   
+                    <li class="col-sm-2">
+                         <div style="display:inline-block"><a href="http://www.walmart.com/search/?query=lego" target ="_blank"> <img src="images/Legocity.jpg" /></a></div>
+                          <div style="clear:both"></div>
+                        <div class="otheritemscontent"> <p>Lego City</p></div><div class="otherItemsPrice"><p>$27.89</p></div>
+                    </li>
+
+                  <li class="col-sm-2">
+                        <div style="display:inline-block"> <a href="http://www.walmart.com/search/?query=ipod nano" target ="_blank"><img src="images/IpodNano.jpg" /></a></div>
+                        <div style="clear:both"></div>
+                       <div class="otheritemscontent"> <p>IPod Nano</p></div><div class="otherItemsPrice"><p>$99</p></div>
+                  </li>
+                    
+                    <li class="col-sm-2">
+                      <div style="display:inline-block"> <a href="http://www.walmart.com/search/?query=wii" target ="_blank"> <img src="images/wii.jpg" /></a></div>
+                          <div style="clear:both"></div>
+                        <div class="otheritemscontent"> <p>Wii</p></div><div class="otherItemsPrice"><p>$305</p></div>
+                    </li>
+					
+					  <li class="col-sm-2">
+                      <div style="display:inline-block"> <a href="http://www.walmart.com/ip/George-Girls-Short-Sleeve-Polo-Shirt/16519196" target ="_blank"> <img src="images/polo.jpg" /></a></div>
+                          <div style="clear:both"></div>
+                        <div class="otheritemscontent"> <p>Polo</p></div><div class="otherItemsPrice"><p>$16.20</p></div>
+                    </li>
+					
+					<li class="col-sm-2">
+					  <div style="display:inline-block"> <a href="http://www.walmart.com/ip/Mrs.-Fields-Personal-Piece-of-Cake-Nibbler-Box-24-count/21089506" target ="_blank"> <img src="images/cake.jpg" /></a></div>
+                          <div style="clear:both"></div>
+                        <div class="otheritemscontent"> <p>Cake box</p></div><div class="otherItemsPrice"><p>$24.99</p></div>
+                    </li>
+					
+					
+                  
+            </ul>
+        </div>
+    </div>

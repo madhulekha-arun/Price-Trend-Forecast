@@ -1,0 +1,144 @@
+﻿.body {
+    display: table;
+    
+}
+.walmart-header {
+    background-color: #007dc6;
+    color:white;
+}
+.searchbutton {
+    background-color: #ffc120;
+}
+.left-side {
+    
+    float: left;
+    display: inline-block;
+   
+}
+.walmart-image {
+    text-align: left;
+}
+.right-side {
+    padding: 20px;
+    float: left;
+    display: inline-block   ;
+    
+}
+ul {
+    list-style-type: none;
+}
+.walmart-panel {
+    width: 900px !important;
+    height: 395px !important;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0 auto;
+    margin-left: 60px;
+    margin-right: 0 auto;
+    background-color: #F2F8FD;
+    box-shadow: 10px 10px 10px 5px #888888;
+}
+.carousel-inner div {
+   display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+#imageslider{
+   display: inline-block;
+    height: 375px !important;
+    width: auto;
+}
+
+    #imageslider li {
+        display:block;
+        width:100%;
+        text-align: justify !important;
+        margin: 0 auto;
+    }
+    
+
+.big-image {
+    height: 88%;
+    width: 88%;
+	margin-right:5px;
+	margin-left:5px;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.deals-font {
+    font-family: 'AR CARTER';
+    font-size: 70px;
+    color: #007DC6;
+    text-align: center;
+    margin-left: 10px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.lowestprice-font {
+    font-family: 'Tempus Sans ITC';
+    font-weight: bold;
+    font-size: 20px;
+    color: #f00;
+    text-align: left;
+    margin-left: 10px;
+}
+.price-font {
+    color: #f47421;
+     font-family: 'Tempus Sans ITC';
+    font-weight: bold;
+    font-size: 30px;
+    margin-right:20px;
+    text-align: right;
+}
+.big-walmart-panel {
+    display: table;
+    margin: 0 auto;
+    text-align:left;
+    
+    position:relative;
+}
+.normalText {
+    font-size:23px;
+    color:#808080;
+}
+
+.walmartButtons {
+    background-color: #F47421;
+    color: white;
+    font-size: 15px;
+}
+
+.smallwalmartButtons {
+    background-color: #F47421;
+    color: white;
+    font-size: 10px;
+}
+.otheritemscontent {
+  float: left; display:inline-block; margin-right: 10px;
+}
+.otherItemsPrice {
+    color: #f47421;
+     font-family: 'Tempus Sans ITC';
+    font-weight: bold;
+    font-size: 12px;
+    display:inline-block;
+    float:left;
+    text-align: right;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}

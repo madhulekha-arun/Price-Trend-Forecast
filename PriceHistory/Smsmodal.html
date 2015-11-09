@@ -1,0 +1,21 @@
+﻿<div class="modal-header">
+    <h3>Enter SMS details</h3>
+</div>
+<div class="modal-body">
+     <div class="form-group" ng-form name="myForm">
+            <input type="text" class="form-control" placeholder="Enter your mobile number "  name="smsNumber" style="width: 200px;" ng-model="smsNumber" required/>
+            <span class="error" ng-show="myForm.smsNumber.$error.required">
+      Required!</span><br>
+            <p>Choose one  or more of these options to be alerted  for {{itemname}}</p>
+            <label>Best Deal</label><input type="checkbox" ng-model="smsBestDeal" />
+            <label>Below todays price</label><input type="checkbox" ng-model="smsTodaysPrice" />
+            <label>On or below cutoff price</label><input type="checkbox" ng-model ="smsCutOffPrice" />
+             <input type="text" class="form-control" placeholder="Enter the price to be alerted for" style="width: 200px;" ng-model="price" ng-show=" smsCutOffPrice ==true"/>
+               
+        </div>
+</div>
+<div class="modal-footer">
+     <span class="input-group-btn" >
+                    <button class="btn btn-default searchbutton" type="button" ng-click="sendSMS(smsNumber)">Go</button>
+                </span>
+</div>
